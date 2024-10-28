@@ -1,23 +1,69 @@
-<section id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Brand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="Chad%20headshot.jpg" alt="Chad's Headshot" width="200">
+        <h1>Your Name</h1>
+        <p>Web Developer & Designer</p>
+    </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Write a brief introduction about yourself, your experience, and what drives you professionally.</p>
+    </section>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="images/project1.png" alt="Project 1" width="300">
+            <p>Project 1: Description of your project.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/project2.png" alt="Project 2" width="300">
+            <p>Project 2: Description of another project.</p>
+        </div>
+    </section>
 
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </section>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- Contact Section with Form -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
