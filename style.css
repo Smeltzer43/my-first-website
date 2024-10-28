@@ -1,71 +1,72 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Section Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-header {
-    background-color: #333;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
 }
 
 section {
-    padding: 50px 20px;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-h1 {
-    color: #333;
+/* Hero Section */
+#hero {
+    background: #333;
+    color: white;
+    padding: 60px 20px;
 }
 
-h2 {
-    color: #444;
+#hero img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-p {
-    color: #555;
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-button {
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Portfolio */
+.portfolio-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Skills */
+#skills ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#skills ul li {
+    background: #333;
+    color: white;
     padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    border: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #555;
-}
-
+/* Footer */
 footer {
-    background-color: #333;
+    background: #333;
     color: white;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9rem;
 }
