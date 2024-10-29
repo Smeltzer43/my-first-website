@@ -29,9 +29,10 @@ a {
 
 #hero {
     display: flex;
+    flex-direction: row-reverse; /* Places the image on the right side */
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 1rem;
+    padding: 6rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
     background-color: #1a1a1a; /* Darker background for a sleek look */
@@ -40,8 +41,9 @@ a {
 
 .hero-text {
     flex: 1;
+    max-width: 50%; /* Constrain text width for balance */
     text-align: left;
-    padding-right: 2rem;
+    padding-left: 2rem; /* Add left padding to separate text from image */
 }
 
 .hero-text h1 {
@@ -55,21 +57,19 @@ a {
 }
 
 .hero-image {
-    flex: 0.7; /* Slightly smaller proportion to balance with text */
-    text-align: right;
+    flex: 0.5; /* Adjusts the image container’s width for balance */
     display: flex;
-    justify-content: center; /* Centers image horizontally */
-    align-items: center; /* Centers image vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image img {
-    width: 250px; /* Adjust size as needed */
+    width: 100%; /* Allow the image to take full container width */
+    max-width: 250px; /* Limits image size for consistency */
     height: auto; /* Maintains aspect ratio */
-    object-fit: contain; /* Ensures the whole image is visible without cropping */
+    object-fit: contain; /* Ensures no cropping */
     border-radius: 10px;
     border: 2px solid #d5c4a1;
-}
-
 }
 
 /* Layout for About Section */
