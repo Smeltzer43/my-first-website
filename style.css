@@ -1,151 +1,69 @@
-/* Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference&family=Open+Sans:wght@400;700&display=swap');
-
-/* General Styles */
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: #D3D3D3;
-    background-color: #000; /* Black background */
-    line-height: 1.6;
-    scroll-behavior: smooth; /* Enables smooth scrolling */
-}
-
-h1, h2 {
-    font-family: 'Glacial Indifference', sans-serif;
-    color: #d5c4a1; /* Updated accent color */
-    margin-bottom: 0.5em;
-}
-
-p, li {
-    color: #D3D3D3; /* Light gray font */
-}
-
-a {
-    color: #d5c4a1;
-    text-decoration: none;
-}
-
-#hero {
-    text-align: center;
+/* General Layout for Hero Section */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 4rem 1rem;
-    background-color: #3197BD; /* New blue background color */
-}
-
-#hero img {
-    border-radius: 50%;
-    width: 150px;
-    margin-bottom: 1rem;
-    border: 2px solid #d5c4a1; /* Updated accent color */
-}
-
-#hero h1 {
-    font-size: 2.5rem;
-    margin-top: 0.5rem;
-    color: #d5c4a1; /* Updated accent color for text */
-}
-
-#hero p {
-    font-size: 1.25rem;
-    color: #d5c4a1; /* Updated accent color for subtitle */
-}
-
-section {
-    padding: 3rem 1rem;
-    text-align: center;
-}
-
-section h2 {
-    font-size: 2rem;
-    border-bottom: 2px solid #d5c4a1; /* Updated accent color */
-    display: inline-block;
-    padding-bottom: 0.5rem;
-    margin-bottom: 2rem;
-}
-
-/* Portfolio Section */
-.portfolio-item {
-    margin: 2rem auto;
-    max-width: 500px;
-    transition: transform 0.3s; /* Smooth transition for hover effect */
-}
-
-.portfolio-item:hover {
-    transform: scale(1.05); /* Zoom-in effect on hover */
-}
-
-.portfolio-item img {
-    width: 100%;
-    border: 2px solid #d5c4a1; /* Updated accent color */
-    border-radius: 8px;
-}
-
-.portfolio-item p {
-    margin-top: 1rem;
-    color: #D3D3D3;
-}
-
-/* Skills Section */
-#skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-#skills li {
-    display: inline-block;
-    margin: 0.5rem 1rem;
-    font-size: 1.1rem;
-    color: #d5c4a1; /* Updated accent color */
-}
-
-/* Contact Form */
-#contact form {
-    max-width: 500px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-#contact label {
-    display: block;
+.hero-text {
+    flex: 1;
+    color: #D3D3D3;
     text-align: left;
-    margin: 1rem 0 0.5rem;
-    color: #d5c4a1; /* Updated accent color */
 }
 
-#contact input, #contact textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    background-color: #333;
-    border: 1px solid #555;
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #d5c4a1;
+}
+
+.hero-text p {
+    margin: 0.5rem 0;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 300px; /* Adjust as needed */
+    border-radius: 10px;
+    border: 2px solid #d5c4a1;
+}
+
+/* Layout for About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+    text-align: left;
+}
+
+.about-image img {
+    width: 300px; /* Adjust as needed */
+    border-radius: 10px;
+    border: 2px solid #d5c4a1;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
     color: #D3D3D3;
-    border-radius: 4px;
+    padding-left: 2rem;
 }
 
-#contact button {
-    background-color: #d5c4a1; /* Updated accent color */
-    color: #000;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#contact button:hover {
-    background-color: #c2b198; /* Slightly darker shade on hover */
-}
-
-/* Footer */
-footer {
-    background-color: #111;
-    padding: 1.5rem;
-    text-align: center;
-    color: #D3D3D3;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
+.about-text p {
+    margin: 0.5rem 0;
 }
 
 
