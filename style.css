@@ -8,6 +8,7 @@ body {
     color: #D3D3D3;
     background-color: #000; /* Black background */
     line-height: 1.6;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
 h1, h2 {
@@ -25,16 +26,17 @@ a {
     text-decoration: none;
 }
 
-/* Layout & Section Styles */
 #hero {
     text-align: center;
     padding: 4rem 1rem;
+    background-color: #333; /* Darker background for hero section */
 }
 
 #hero img {
     border-radius: 50%;
     width: 150px;
     margin-bottom: 1rem;
+    border: 2px solid #E0B589;
 }
 
 #hero h1 {
@@ -64,6 +66,11 @@ section h2 {
 .portfolio-item {
     margin: 2rem auto;
     max-width: 500px;
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Zoom-in effect on hover */
 }
 
 .portfolio-item img {
@@ -138,9 +145,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-
-#contact button:hover {
-    background-color: #555;
 }
