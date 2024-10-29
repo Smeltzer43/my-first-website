@@ -13,7 +13,7 @@ body {
 
 h1, h2 {
     font-family: 'Glacial Indifference', sans-serif;
-    color: #E0B589; /* Champagne metallic accent */
+    color: #d5c4a1; /* Updated accent color */
     margin-bottom: 0.5em;
 }
 
@@ -22,7 +22,7 @@ p, li {
 }
 
 a {
-    color: #E0B589;
+    color: #d5c4a1;
     text-decoration: none;
 }
 
@@ -36,19 +36,18 @@ a {
     border-radius: 50%;
     width: 150px;
     margin-bottom: 1rem;
-    border: 2px solid #E0B589;
+    border: 2px solid #d5c4a1; /* Updated accent color */
 }
 
 #hero h1 {
     font-size: 2.5rem;
     margin-top: 0.5rem;
-    color: #E0B589; /* Keeping champagne color for text */
+    color: #d5c4a1; /* Updated accent color for text */
 }
 
 #hero p {
     font-size: 1.25rem;
-    color: #E0B589; /* Champagne accent for subtitle */
-}
+    color: #d5c4a1; /* Updated accent color for subtitle */
 }
 
 section {
@@ -58,7 +57,7 @@ section {
 
 section h2 {
     font-size: 2rem;
-    border-bottom: 2px solid #E0B589;
+    border-bottom: 2px solid #d5c4a1; /* Updated accent color */
     display: inline-block;
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
@@ -77,7 +76,7 @@ section h2 {
 
 .portfolio-item img {
     width: 100%;
-    border: 2px solid #E0B589; /* Champagne border */
+    border: 2px solid #d5c4a1; /* Updated accent color */
     border-radius: 8px;
 }
 
@@ -96,7 +95,7 @@ section h2 {
     display: inline-block;
     margin: 0.5rem 1rem;
     font-size: 1.1rem;
-    color: #E0B589; /* Champagne accent */
+    color: #d5c4a1; /* Updated accent color */
 }
 
 /* Contact Form */
@@ -109,7 +108,7 @@ section h2 {
     display: block;
     text-align: left;
     margin: 1rem 0 0.5rem;
-    color: #E0B589;
+    color: #d5c4a1; /* Updated accent color */
 }
 
 #contact input, #contact textarea {
@@ -123,7 +122,7 @@ section h2 {
 }
 
 #contact button {
-    background-color: #E0B589; /* Champagne metallic button */
+    background-color: #d5c4a1; /* Updated accent color */
     color: #000;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -133,7 +132,7 @@ section h2 {
 }
 
 #contact button:hover {
-    background-color: #d0a574;
+    background-color: #c2b198; /* Slightly darker shade on hover */
 }
 
 /* Footer */
@@ -144,6 +143,11 @@ footer {
     color: #D3D3D3;
     font-size: 0.9rem;
 }
+
+footer p {
+    margin: 0;
+}
+
 
 footer p {
     margin: 0;
