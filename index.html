@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chad Smeltzer - Infrastructure Innovator</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Froala CSS -->
+    <link rel="stylesheet" href="node_modules/froala-editor/css/froala_editor.pkgd.min.css">
 </head>
 <body>
     <!-- Hero Section -->
     <header id="hero">
         <div class="hero-image">
-            <img src="images/Chad Headshot Transparent.png" alt="Chad Headshot Transparent.png">
+            <img src="images/transparent chad headshot.png" alt="Chad Smeltzer Headshot">
         </div>
         <div class="hero-text">
             <h1>Chad Smeltzer</h1>
-            <p>CEO-Bidcurement</p>
-            <p> CEO-The Infrastructure Network</p>
-            <p>VP-Technology at Maze of Life</p>
+            <p>CEO of Bidcurement</p>
+            <p>The Infrastructure Network</p>
+            <p>VP of Technology at Maze of Life</p>
             <p>Podcast Host | Tech Innovator</p>
         </div>
     </header>
+
+    <!-- Froala Editor Section -->
+    <section id="editor-section">
+        <h2>Content Editor</h2>
+        <textarea id="editor"></textarea>
+    </section>
 
     <!-- About Section -->
     <section id="about">
@@ -40,8 +49,8 @@
     <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="portfolio-item">
-            <img src="images/Bidcurement LinkedIn Banner (1920 × 480 px) (1920 x 240 px) (1).png" alt="Bidcurement LinkedIn Banner (1920 × 480 px) (1920 x 240 px) (1).png">
-            <p>Project 1: A AI Powered Vitrual Procurement System.</p>
+            <img src="images/project1.png" alt="Project 1">
+            <p>Project 1: A brief description of your project.</p>
         </div>
         <div class="portfolio-item">
             <img src="images/project2.png" alt="Project 2">
@@ -60,7 +69,7 @@
         </ul>
     </section>
 
-    <!-- Contact Section with Form -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/your-form-id" method="POST">
@@ -81,6 +90,8 @@
         <p>&copy; 2024 Chad Smeltzer. All rights reserved.</p>
     </footer>
 
+    <!-- Froala JavaScript -->
+    <script src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
