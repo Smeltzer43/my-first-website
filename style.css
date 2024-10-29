@@ -55,14 +55,21 @@ a {
 }
 
 .hero-image {
-    flex: 0.7; /* Slightly smaller proportion to avoid overwhelming the text */
+    flex: 0.7; /* Slightly smaller proportion to balance with text */
     text-align: right;
+    display: flex;
+    justify-content: center; /* Centers image horizontally */
+    align-items: center; /* Centers image vertically */
 }
 
 .hero-image img {
-    width: 250px; /* Reduced size for a more balanced look */
+    width: 250px; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the whole image is visible without cropping */
     border-radius: 10px;
     border: 2px solid #d5c4a1;
+}
+
 }
 
 /* Layout for About Section */
