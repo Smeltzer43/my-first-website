@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chad Smeltzer - Infrastructure Innovator</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Froala CSS -->
-    <link rel="stylesheet" href="node_modules/froala-editor/css/froala_editor.pkgd.min.css">
+    <!-- CKEditor 5 CDN -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
 </head>
 <body>
+
     <!-- Hero Section -->
     <header id="hero">
         <div class="hero-image">
-            <img src="images/transparent chad headshot.png" alt="Chad Smeltzer Headshot">
+            <img src="images/transparent-chad-headshot.png" alt="Chad Smeltzer Headshot">
         </div>
         <div class="hero-text">
             <h1>Chad Smeltzer</h1>
@@ -23,12 +23,6 @@
             <p>Podcast Host | Tech Innovator</p>
         </div>
     </header>
-
-    <!-- Froala Editor Section -->
-    <section id="editor-section">
-        <h2>Content Editor</h2>
-        <textarea id="editor"></textarea>
-    </section>
 
     <!-- About Section -->
     <section id="about">
@@ -66,10 +60,11 @@
             <li>CSS</li>
             <li>JavaScript</li>
             <li>Python</li>
+            <!-- Add more skills as needed -->
         </ul>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with CKEditor Form -->
     <section id="contact">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/your-form-id" method="POST">
@@ -80,7 +75,7 @@
             <input type="email" id="email" name="email" required>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="editor" name="message" rows="4" required></textarea>
 
             <button type="submit">Send Message</button>
         </form>
@@ -90,8 +85,14 @@
         <p>&copy; 2024 Chad Smeltzer. All rights reserved.</p>
     </footer>
 
-    <!-- Froala JavaScript -->
-    <script src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
-    <script src="script.js"></script>
+    <!-- CKEditor Initialization Script -->
+    <script>
+        // Initialize CKEditor on the textarea
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 </body>
 </html>
