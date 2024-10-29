@@ -1,3 +1,5 @@
-document.querySelector("#contact a").addEventListener("click", function() {
-    alert("Feel free to reach out to me via email!");
+document.addEventListener('DOMContentLoaded', function() {
+    new FroalaEditor('#editor', {
+        key: 'YOUR-LICENSE-KEY-HERE'  // Replace with your actual Froala license key
+    });
 });
